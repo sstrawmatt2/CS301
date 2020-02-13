@@ -60,7 +60,7 @@ def writeLists(f, start, end, numDataPoints, outputFile):
     file_out.close()
 
 
-
+# basic list function
 def basicList():
     rnew_rando = randint(1,999)
     data2 = [1,2,3,45,67,8,6,5,4,3,4,12,3,17,1,2,3,45,67,8,6,5,4,3,4,12,3,17,1,2,3,45,67,8,6,5,4,3,4,12,3,17]
