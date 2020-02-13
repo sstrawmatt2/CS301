@@ -39,5 +39,28 @@ def testtime(startvalue, increment, tries, fname, function):
             fout.writerow(str(x)+","+str(t))
             x = x + increment
 
+
+
+def writeLists(f, start, end, numDataPoints, outputFile):
+    file_out = open(outputFile,"w+")
+    input_value = start
+    increment = (end-start) // numDataPoints
+
+    for i in range(numDataPoints):
+        data_dict = createDictionary("words.txt",input_value)
+        runtime = functionTime(f, data_dict)
+        file_out.write(f"{str(len(data_dict))},{str(runtime)}\n")
+        input_value += increment
+        
+    file_out.close()
+        
+
+
+
+
+
+
+    
+
     
 # write to csv file
