@@ -14,11 +14,6 @@ def list_tests():
     list_two = ["x","x","x"]
     list_three = ["x,x,x"]
 
-    lists = []
-    lists.append(list_one)
-    lists.append(list_two)
-    lists.append(list_three)
-
     start = time.time()
     for i in range(100):
         list_one.append("x")
@@ -30,7 +25,7 @@ def list_tests():
     print(ltime)
 
     
-
+# example that we started in class    
 def testtime(startvalue, increment, tries, fname, function):
     x = startvalue
     with open(fname, 'w') as fout:
@@ -40,7 +35,7 @@ def testtime(startvalue, increment, tries, fname, function):
             x = x + increment
 
 
-
+## Writing lists to csv file(Allen Adams)
 def writeLists(f, start, end, numDataPoints, outputFile):
     file_out = open(outputFile,"w+")
     input_value = start
@@ -53,7 +48,44 @@ def writeLists(f, start, end, numDataPoints, outputFile):
         input_value += increment
         
     file_out.close()
+
+
+
+def basicList():
+    import time
+
+    data = [1,2,3,45,67,8,6,5,4,3,4,12,3,17]
+    dataTime=0
+    start = time.time()
+
+    for i in range(dataTime+1):
+        dataTime += 1
+    return dataTime
         
+    end = time.time()
+
+    dataTime = end-start
+
+    
+    print(dataTime)
+
+    data2 = [1,2,3,45,67,8,6,5,4,3,4,12,3,17,1,2,3,45,67,8,6,5,4,3,4,12,3,17,1,2,3,45,67,8,6,5,4,3,4,12,3,17]
+    dataTime2 = 0
+
+    start = time.time()
+    for i in range(1000):
+        data2.append(1)
+    end = time.time()
+
+    dataTime2 = end - start
+
+    
+    print(dataTime2)
+    
+
+
+
+
 
 
 
@@ -61,6 +93,3 @@ def writeLists(f, start, end, numDataPoints, outputFile):
 
 
     
-
-    
-# write to csv file
