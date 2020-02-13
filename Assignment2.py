@@ -8,6 +8,15 @@ def timer_one_param(function_name,param):
     end_time = time.time()
     return [end_time - start_time,value]
 
+
+
+def timerFunction(f,input):
+    time1=time.time()
+    f(input)
+    time2 = time.time()
+
+    return time2-time1
+
 # Sean Strawmatt Assignment 2 2/11/2020
 
 
@@ -53,27 +62,16 @@ def writeLists(f, start, end, numDataPoints, outputFile):
 
 
 def basicList():
-    import random
+    rnew_rando = randint(1,999)
     data2 = [1,2,3,45,67,8,6,5,4,3,4,12,3,17,1,2,3,45,67,8,6,5,4,3,4,12,3,17,1,2,3,45,67,8,6,5,4,3,4,12,3,17]
     dataTime2 = 0
 
     start = time.time()
     for i in range(1000):
-        print random.randint(1,101)
+        data2.append(new_rando)
     end = time.time()
 
     dataTime2 = end - start
 
     print(dataTime2)
-    
 
-
-
-
-
-
-
-
-
-
-    
