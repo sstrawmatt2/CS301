@@ -68,10 +68,12 @@ def basicList():
 
     start = time.time()
     for i in range(1000):
-        data2.append(new_rando)
+        data2.append(new_rando) ## how to create a random number generator
     end = time.time()
 
     dataTime2 = end - start
 
     print(dataTime2)
+
+# basic dictionary function
 
